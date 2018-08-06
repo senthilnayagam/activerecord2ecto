@@ -1,7 +1,7 @@
 defmodule Ar2ecto.Mixfile do
   use Mix.Project
 
-  @version "0.1.2"
+  @version "0.1.3"
 
   def project do
     [app: :ar2ecto,
@@ -9,16 +9,16 @@ defmodule Ar2ecto.Mixfile do
      elixir: "~> 1.0",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps,
+     deps: deps(),
 
      # Hex
-     description: description,
-     package: package,
+     description: description(),
+     package: package(),
 
      # Docs
      name: "Ar2ecto",
      docs: [source_ref: "v#{@version}",
-            source_url: "https://github.com/aforward/ar2ecto"]]
+            source_url: "https://github.com/senthilnayagam/ar2ecto"]]
   end
 
   def application do
